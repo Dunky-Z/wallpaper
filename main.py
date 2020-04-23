@@ -49,7 +49,6 @@ class GetImage():
     def set_new_wallpaper(self):
         print("* 正在设置壁纸，请稍后···")
         print("* 成功更换壁纸")
-        print(self.pic_name)
         ctypes.windll.user32.SystemParametersInfoW(20, 0, self.pic_name, 0)
 
 
@@ -57,9 +56,9 @@ def main():
     # 实例化类
     img = GetImage(pic_name, url)
     # 从Unsplash抓取图片
-    #img.get_img_from_unsplash()
+    img.get_img_from_unsplash()
     # 从bing首页抓取图片
-    img.get_imag_from_bing()
+    #img.get_imag_from_bing()
     # 设置壁纸
     img.set_new_wallpaper()
 
