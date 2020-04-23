@@ -11,7 +11,7 @@ pic_name = PIC_DIR + now.strftime("%d%m%Y%H%M%S")
 pic_name = pic_name + ".jpeg"
 
 # 使用Unsplash随机图片，过滤大小为4096*2160
-url = "https://source.unsplash.com/random/4096x2160"
+url = "https://source.unsplash.com/random/1920x1080"
 
 
 class GetImage():
